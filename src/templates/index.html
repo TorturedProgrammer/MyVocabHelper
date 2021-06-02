@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <meta charset="UTF-8">
+    <title>Vocab Helper</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <p id="question">
+        Which word matches this definition?
+    </p>
+    <div id="definition_container">
+        <p id="definition">
+            {{definition}}
+        </p>
+    </div>
+    <div id="word_list_container">
+        <div class="word_container" onclick="clicked(this)" onfocus="focus()">
+            <p id="word1">
+                {{word1}}
+            </p>
+        </div>
+        <div class="word_container" onclick="clicked(this)">
+            <p id="word2">
+                {{word2}}
+            </p>
+        </div>
+        <div class="word_container" onclick="clicked(this)">
+            <p id="word3">
+                {{word3}}
+            </p>
+        </div>
+    </div>
+    <p id="answer">
+        {{answer}}
+    </p>
+</body>
+</html>

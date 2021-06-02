@@ -1,0 +1,68 @@
+body {
+  font-size: 16px;
+  background-color: #0073ff;
+}
+
+#question {
+  font-size: 3vw;
+  margin: 1%;
+  cursor: default;
+  text-align: center;
+}
+
+#definition_container {
+  background-color: white;
+  border: black 2px solid;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  width: 90%;
+}
+
+#definition {
+  cursor: default;
+  font-size: 2em;
+  margin: 0;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 0.5%;
+}
+
+#word_list_container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 3%;
+}
+.word_container {
+  display: flex;
+  background-color: #86ffdb;
+  width: 26vw;
+  height: 26vw;
+  border-radius: 10px;
+  border: black 2px solid;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#word1 {
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+#word2 {
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+#word3 {
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+#answer {
+  display: none;
+}
